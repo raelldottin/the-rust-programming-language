@@ -68,3 +68,55 @@ $ rustc main.rs
 ```
 The rustc command creates a binary executable from your source code.
 
+## Rust's build system and package manager is called Cargo
+```console
+$ cargo --version
+```
+The cargo command is installed with Rust and you can use command above to verify that it's installed.
+
+## Creating a Project with Cargo
+``` console
+$ cargo new hello_cargo
+$ cd hello_cargo
+```
+
+
+The project folder consists of:
+- Cargo.toml file
+- src directory
+..- main.rs file inside
+
+
+```toml
+[package]
+name = "hello_cargo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+```
+The TOML filr is cargo's configuration file.
+
+```console
+$ cargo build
+```
+This command produces an executable file.
+
+
+```console
+$ cargo run
+```
+This command runs the executable file.
+
+```console
+$ cargo check
+```
+This will check your code for compile errors and doesn't produce an executable.
+
+
+```console
+$ cargo build --release
+```
+This will build your executable with optimizations.
