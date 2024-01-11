@@ -2,12 +2,13 @@
 # Steve Klabnik, Carol Nichols, Contributions from the Rust Community
 # This material may be protected by copyright. The Rust Programming Language
 
-## rustup command can used to install and manage rust installations
+##  Installation
 ```console
 $ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh”
 
 ```
-Downloads a script which installs the rustup tool and rust.
+The rustup command can used to install and manage rust installations.
+The curl command sownloads a script and the sh command runs the script which installs the rustup tool and rust.
 
 
 ```console
@@ -40,3 +41,5 @@ This command will uninstall Rust and the rustup script
 $ rustup doc
 ```
 This command will open the local documentation in your web browser.
+
+
